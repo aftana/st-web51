@@ -25,7 +25,7 @@ SECRET_KEY = 'wf9hzsl_la-!ljj-v8-l3#$jn&(feckw!sf7@+v1jr@4+m8ozy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,8 +55,8 @@ ROOT_URLCONF = 'ask.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-#        'DIRS': [os.path.join(BASE_DIR, 'qa')],
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'qa')],
+#        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
